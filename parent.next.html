@@ -1,0 +1,592 @@
+<style>
+  .tacn label {
+    display: block;
+    width: 9em;
+    margin: 0 0 0.6em;
+  }
+
+  td {
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+  }
+
+  #history_open {
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 99%;
+    margin-top: 33px;
+  }
+</style>
+<table id="history_open">
+
+  <tr>
+    <th>id</th>
+    <th>個人情報</th>
+    <th>商品情報</th>
+    <th>注文詳細</th>
+    <th>送付先住所</th>
+    <th>送り主情報</th>
+    <th>支払済</th>
+    <th>入稿データ</th>
+    <th>注文日</th>
+  </tr>
+  <tr>
+    <td class='pr'>244<button class='purchase_delete' name='purchaseID' value='244'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>5 営業日</span><br><span>300 冊</span><br><span>144,760円</span><br> <span>銀行振込</span><br></td>
+    <td>
+      <pre>
+  サイズ : A5
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+
+  見返し用紙 : マーメイド153kg
+  見返し用紙色 : すすき
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先お名前 : oota
+  宛先郵便番号  : 111-0022
+  宛先 : 東京都台東区清川
+  宛先番地 : 11
+  お電話 : 0230234523
+  送付冊数 : 67
+  送料 : 0
+  
+  宛先お名前2 : takahashi
+  宛先郵便番号2  : 020-0022
+  宛先2 : 岩手県盛岡市大通
+  宛先番地2 : 93
+  お電話2 : 08054325423
+  送付冊数2 : 110
+  送料2 : 1500
+  
+  宛先お名前3 : ささsa
+  宛先郵便番号3 : 101-0034
+  宛先3 : 東京都千代田区神田東紺屋町
+  宛先番地3 : 3344
+  お電話3 : 09065436543
+  送付冊数3 : 123
+  送料3 : 1500</pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 会員様名義</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='3'>
+        <input type='hidden' name='id' value='244'>
+        <label><input type='radio' name='settled' value='0' checked>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1'>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年05月03日</td>
+  </tr>
+  <tr>
+    <td class='pr'>243<button class='purchase_delete' name='purchaseID' value='243'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>200 冊</span><br><span>98,804円</span><br> <span>後払い決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : A5
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表紙カバー : なし
+  折込用紙 : 色上質中厚口
+  折込用紙色 : さくら
+  見返し用紙 : マーメイド153kg
+  見返し用紙色 : うす藤
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先会社名 : GGT
+  宛先お名前 : Jackie
+  宛先郵便番号  : 001-0023
+  宛先 : 北海道札幌市北区北二十三条西
+  宛先番地 : 232
+  お電話 : 09065436543
+  送付冊数 : 200
+  送料 : 2640
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 弊社名（縦横印刷株式会社）</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='243'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td><a class='download' target='_brank'
+        href='/wp-content/plugins/monoDX/fileup/../../../uploads/nyuko_file/e95529be55f43b3295fd1809e873b8a4_000_945257_カレンダー2021-01.psd.zip'>カレンダー2021-01.psd.zip</a><a
+        class='download' target='_brank'
+        href='/wp-content/plugins/monoDX/fileup/../../../uploads/nyuko_file/e95529be55f43b3295fd1809e873b8a4_001_35115_マーメイド廃盤について.docx.zip'>マーメイド廃盤について.docx.zip</a>
+      <form method='post'>
+        <input name='file-delete[]' type='hidden'
+          value='../../../uploads/nyuko_file/e95529be55f43b3295fd1809e873b8a4_000_945257_カレンダー2021-01.psd.zip'><input
+          name='file-delete[]' type='hidden'
+          value='../../../uploads/nyuko_file/e95529be55f43b3295fd1809e873b8a4_001_35115_マーメイド廃盤について.docx.zip'>
+        <input type='hidden' name='id' value='243'>
+        <input name='submit-delete' type='submit' value='削除'>
+      </form>
+    </td>
+    <td>2021年05月03日</td>
+  </tr>
+  <tr>
+    <td class='pr'>242<button class='purchase_delete' name='purchaseID' value='242'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>100 冊</span><br><span>64,706円</span><br> <span>後払い決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : B5
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  見返し印刷面 : なし
+  見返し用紙色 : にぶ空2
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先お名前 : oota
+  宛先郵便番号  : 111-0022
+  宛先 : 東京都台東区清川
+  宛先番地 : 11
+  お電話 : 0230234523
+  送付冊数 : 100
+  送料 : 0
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 弊社名（縦横印刷株式会社）</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='242'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年05月02日</td>
+  </tr>
+  <tr>
+    <td class='pr'>241<button class='purchase_delete' name='purchaseID' value='241'>×</button></td>
+    <td> <span>SDF </span><br><span>sasa 様</span><br><span class='phone'>TEL: 0402345234</span><br>
+      <span>satojiro+m@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>200 冊</span><br><span>104,322円</span><br> <span>PayPal決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : A4
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表1 : モノクロ
+  折込用紙 : 色上質特厚口
+  折込用紙色 : クリーム
+  見返し用紙 : マーメイド153kg
+  見返し印刷面 : なし
+  見返し用紙色 : うす青緑
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先お名前 : KKato
+  宛先郵便番号  : 101-0033
+  宛先 : 東京都千代田区神田岩本町
+  宛先番地 : I00100
+  お電話 : 09038383838
+  送付冊数 : 200
+  送料 : 0
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 会員様名義</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='SDF'><input type='hidden' name='onamae' value='sasa'><input
+          type='hidden' name='mail' value='satojiro+m@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='241'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年05月01日</td>
+  </tr>
+  <tr>
+    <td class='pr'>240<button class='purchase_delete' name='purchaseID' value='240'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>900 冊</span><br><span>418,026円</span><br> <span>後払い決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : B6
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表紙カバー : あり
+  表紙カバー印刷 : カラー
+  表紙カバー用紙 : コート135kg
+  折込枚数 : 0
+  見返し用紙 : レザック175kg
+  見返し印刷面 : なし
+  見返し用紙色 : スモークホワイト
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先お名前 : oota
+  宛先郵便番号  : 111-0022
+  宛先 : 東京都台東区清川
+  宛先番地 : 11
+  お電話 : 0230234523
+  送付冊数 : 900
+  送料 : 0
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 弊社名（縦横印刷株式会社）</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='240'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1'>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3' checked>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td><a class='download' target='_brank'
+        href='/wp-content/plugins/monoDX/fileup/../../../uploads/nyuko_file/2d79cea9c109ded88b1a13ac96353336_000_1384352_id17・A5中綴じ冊子.zip'>id17・A5中綴じ冊子.zip</a>
+      <form method='post'>
+        <input name='file-delete[]' type='hidden'
+          value='../../../uploads/nyuko_file/2d79cea9c109ded88b1a13ac96353336_000_1384352_id17・A5中綴じ冊子.zip'>
+        <input type='hidden' name='id' value='240'>
+        <input name='submit-delete' type='submit' value='削除'>
+      </form>
+    </td>
+    <td>2021年05月01日</td>
+  </tr>
+  <tr>
+    <td class='pr'>239<button class='purchase_delete' name='purchaseID' value='239'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>100 冊</span><br><span>66,869円</span><br> <span>後払い決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : B6
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表紙カバー : あり
+  表紙カバー印刷 : モノクロ
+  折込印刷面 : 片面
+  折込用紙色 : 濃クリーム
+  見返し印刷面 : なし
+  見返し用紙色 : 象牙</pre>
+    </td>
+    <td>
+      <pre>
+  宛先会社名 : GGT
+  宛先お名前 : Jackie
+  宛先郵便番号  : 001-0023
+  宛先 : 北海道札幌市北区北二十三条西
+  宛先番地 : 232
+  お電話 : 09065436543
+  送付冊数 : 100
+  送料 : 2640
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 会員様名義</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='239'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年04月30日</td>
+  </tr>
+  <tr>
+    <td class='pr'>238<button class='purchase_delete' name='purchaseID' value='238'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>100 冊</span><br><span>66,869円</span><br> <span>後払い決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : B6
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表紙カバー : あり
+  折込用紙色 : 濃クリーム
+  見返し用紙 : レザック175kg
+  見返し印刷面 : なし
+  見返し用紙色 : 象牙
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先お名前 : saski
+  宛先郵便番号  : 001-0033
+  宛先 : 北海道札幌市北区北三十三条西
+  宛先番地 : 90
+  お電話 : 03054322345
+  送付冊数 : 100
+  送料 : 2640
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 弊社名（縦横印刷株式会社）</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='238'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年04月30日</td>
+  </tr>
+  <tr>
+    <td class='pr'>237<button class='purchase_delete' name='purchaseID' value='237'>×</button></td>
+    <td> <span>GGT </span><br><span>Jackie 様</span><br><span class='phone'>TEL: 09065436543</span><br>
+      <span>satojiro+y@gmail.com </span></td>
+    <td> <span>7 営業日</span><br><span>100 冊</span><br><span>67,789円</span><br> <span>後払い決済</span><br></td>
+    <td>
+      <pre>
+  サイズ : B6
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表紙カバー : あり
+  表紙カバー印刷 : モノクロ
+  表紙カバー用紙 : コート110kg
+  表紙カバーPP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先会社名 : GGT
+  宛先お名前 : Jackie
+  宛先郵便番号  : 001-0023
+  宛先 : 北海道札幌市北区北二十三条西
+  宛先番地 : 232
+  お電話 : 09065436543
+  送付冊数 : 100
+  送料 : 2640
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 弊社名（縦横印刷株式会社）</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='GGT'><input type='hidden' name='onamae' value='Jackie'><input
+          type='hidden' name='mail' value='satojiro+y@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='237'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年04月30日</td>
+  </tr>
+  <tr>
+    <td class='pr'>236<button class='purchase_delete' name='purchaseID' value='236'>×</button></td>
+    <td> <span>SDF </span><br><span>sasa 様</span><br><span class='phone'>TEL: 0402345234</span><br>
+      <span>satojiro+m@gmail.com </span></td>
+    <td> <span>5 営業日</span><br><span>400 冊</span><br><span>80,355円</span><br> <span>銀行振込</span><br></td>
+    <td>
+      <pre>
+  サイズ : A4
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+  表1 : カラー
+  表2 : なし
+  表3 : なし
+  表4 : なし
+  表紙の用紙 : 上質90kg
+  表紙の色 : アイボリー
+  本文の用紙 : 色上質厚口
+
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先会社名 : SDF
+  宛先お名前 : sasa
+  宛先郵便番号  : 101-0045
+  宛先 : 東京都千代田区神田鍛冶町
+  宛先番地 : MK99
+  お電話 : 0402345234
+  送付冊数 : 280
+  送料 : 0
+  
+  宛先お名前2 : KKato
+  宛先郵便番号2  : 101-0033
+  宛先2 : 東京都千代田区神田岩本町
+  宛先番地2 : I00100
+  お電話2 : 09038383838
+  送付冊数2 : 120
+  送料2 : 1500
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 会員様名義</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value='SDF'><input type='hidden' name='onamae' value='sasa'><input
+          type='hidden' name='mail' value='satojiro+m@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='2'>
+        <input type='hidden' name='id' value='236'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td><a class='download' target='_brank'
+        href='/wp-content/plugins/monoDX/fileup/../../../uploads/nyuko_file/351be5e27ec3b5694f214142caa9a4cc_000_1384352_0428・id17・A5中綴じ冊子.zip'>0428・id17・A5中綴じ冊子.zip</a>
+      <form method='post'>
+        <input name='file-delete[]' type='hidden'
+          value='../../../uploads/nyuko_file/351be5e27ec3b5694f214142caa9a4cc_000_1384352_0428・id17・A5中綴じ冊子.zip'>
+        <input type='hidden' name='id' value='236'>
+        <input name='submit-delete' type='submit' value='削除'>
+      </form>
+    </td>
+    <td>2021年04月30日</td>
+  </tr>
+  <tr>
+    <td class='pr'>235<button class='purchase_delete' name='purchaseID' value='235'>×</button></td>
+    <td> <span> </span><br><span>しろい 様</span><br><span class='phone'>TEL: 09023442222</span><br>
+      <span>satojiro+k@gmail.com </span></td>
+    <td> <span>5 営業日</span><br><span>100 冊</span><br><span>10,659円</span><br> <span>銀行振込</span><br></td>
+    <td>
+      <pre>
+  サイズ : A4
+  綴じ方 : 無線綴じ製本
+  綴じ方向 : 左綴じ
+
+  PP加工 : なし
+  穴あけ加工 : なし</pre>
+    </td>
+    <td>
+      <pre>
+  宛先お名前 : しろい
+  宛先郵便番号  : 010-0044
+  宛先 : 秋田県秋田市横森
+  宛先番地 : 998
+  お電話 : 09023442222
+  送付冊数 : 100
+  送料 : 0
+  </pre>
+    </td>
+    <td>
+      <pre>
+  送り主 : 弊社名（縦横印刷株式会社）</pre>
+    </td>
+    <td class='tacn'>
+      <form method='post'>
+        <input type='hidden' name='company' value=''><input type='hidden' name='onamae' value='しろい'><input type='hidden'
+          name='mail' value='satojiro+k@gmail.com'>
+        <input type='hidden' class='shp-addr' name='addr'>
+        <input type='hidden' class='addr_count' value='1'>
+        <input type='hidden' name='id' value='235'>
+        <label><input type='radio' name='settled' value='0'>入金確認待ち</label>
+        <label><input type='radio' name='settled' value='1' checked>入金確認済み</label>
+        <label><input type='radio' name='settled' value='2'>印刷製本中</label>
+        <label><input type='radio' class='settled_3' name='settled' value='3'>出荷完了</label>
+        <input type='submit' name='change_settled' value='変更'>
+      </form>
+    </td>
+    <td></td>
+    <td>2021年04月30日</td>
+  </tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+  $("[name='change_settled']").click(function(e){
+    e.preventDefault();
+    var sofusaki = $(this).parent().parent().prev().prev().children().text();
+    console.log(sofusaki);
+    // return false;
+  });
+</script>

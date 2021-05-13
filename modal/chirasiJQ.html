@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+$(function () {
+  var btn = $('#btn');
+  var modal = $('#modal');
+  
+  btn.click(function(){
+    modal.show(500);
+  });
+  
+  //closeボタン
+  var closeBtn = $('#closeBtn');
+  closeBtn.click(function(){
+    modal.hide();
+  });
+  
+  //裏面を見たい
+        // <img src="01_C-1_u.jpg" alt="" id="ura">
+  $('#omote').click(function(){
+    $('.modal-body p').append('<img src="01_C-1_u.jpg" alt="" id="ura">');
+    $('#ura').fadeIn(1000);
+    $(this).remove();
+  });
+  //表面にもどりたい
+  $('#ura').click(function(){1  
+    $('#ura').fadeOut(500);
+    $('#omote').fadeIn(1000);
+  });
+  
+  //外側の黒い部分を押してもモーダルが消えるようにしたい
+  modal.click(function(e){
+    if(  !$(e.target).closest('#omote').length
+        &&  ! $(e.target).closest('#ura').length )
+      modal.hide() ;
+  });
+    
+});  //DOMContentLoadedの閉じ
+  </script>
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <p>
+        <input type="button" id="closeBtn" value="x">
+        <img src="01_C-1_o.jpg" alt="" id="omote" title="クリックで裏面も見れるよ!">
+      </p>
+    </div>
+  </div>
+</div>
+
+<p>
+  <img src="01_C-1_os.jpg" alt=""><br>
+  <input type="button" id="btn" value='click me'>
+</p>

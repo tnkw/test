@@ -1,0 +1,78 @@
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content{
+  /* background-color: white; */
+  width: 596px;
+  margin: 40% auto;
+  margin: 10% auto;
+}
+#ura{display: none;}
+#closeBtn{ 
+  float: right;
+  font-size: 2em;
+  padding: 0 11px;
+}
+</style>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <input type="button" id="closeBtn" value="x">
+      <p>
+        <img src="01_C-1_o.jpg" alt="" id="omote" title="クリックで裏面も見れるよ!">
+        <img src="01_C-1_u.jpg" alt="" id="ura">
+      </p>
+    </div>
+  </div>
+</div>
+
+<p>
+  <img src="01_C-1_os.jpg" alt=""><br>
+  <input type="button" id="btn" value='click me'>
+</p>
+
+<script>
+var btn = document.getElementById('btn');
+var modal = document.getElementById('modal');
+
+btn.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+//closeボタン
+var closeBtn = document.getElementById('closeBtn');
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+//裏面を見たい
+var omote = document.getElementById('omote');
+  omote.addEventListener('click', function() {
+  omote.style.display = 'none';
+  ura.style.display = 'block';
+});
+//表面にもどりたい
+var ura = document.getElementById('ura' );
+  ura.addEventListener('click', function() {
+  ura.style.display = 'none';
+  omote.style.display = 'block';
+});
+
+//外側の黒い部分を押してもモーダルが消えるようにしたい
+window.addEventListener('click', function(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+</script>

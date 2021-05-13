@@ -1,0 +1,30 @@
+<script>
+
+
+  
+    $(window).on('load', function() {
+  //  window.onload = function () {
+      // 完全に読み込み終わってから実行する処理
+      $('header').append("onload");
+   });
+
+    $(function () {
+      //DOM構築後実行 画像等は待たない
+      $('header').append("$(fnction)");
+    });
+
+    $(document).ready(function () {
+      //DOM構築後実行 画像等は待たない
+      $('header').append("ready");
+    });
+
+document.addEventListener('DOMContentLoaded', function () {
+  //最初の HTML 文書の読み込みと解析が完了したとき
+  $('header').append("addEventListener");
+});
+
+    window.addEventListener('load', function() {
+         $('header').append("window addEventListener");
+    });
+
+</script>

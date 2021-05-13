@@ -1,0 +1,31 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content{
+  /* background-color: white; */
+  width: 596px;
+  margin: 40% auto;
+  margin: 10% auto;
+}
+#ura{display: none;}
+#closeBtn{ 
+  float: right;
+  font-size: 2em;
+  padding: 0 11px;
+}
+.modal-body p{position: relative;}
+.modal-body p img, #closeBtn{
+  position: absolute;
+  top: 0px;
+}
+#closeBtn{ z-index: 2;right: 0;}
+#omote{ z-index: 1;}
+#ura{ z-index: 0;}
