@@ -1,0 +1,28 @@
+<style>.product{width: 50px}</style>
+
+<select id="print">
+	<option>おみくじ</option>
+	<option>花札</option>
+	<option>麻雀牌</option>
+</select>
+<br>
+
+<div id="img_wrap">
+  
+  <!-- ここに画像が埋め込まれる -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+  
+//最初に開かれたときに"おみくじ"が選ばれてるのでその処理だけ
+  var elem = '';
+  for( let i=0 ; i < 7 ; i++ ){
+    elem += '<img class="product" src="' + i + '.png">' ;
+  }
+
+  $('#img_wrap').html(elem);
+  // console.log(elem);
+</script>
+  
+

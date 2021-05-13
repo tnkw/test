@@ -1,0 +1,27 @@
+<form>
+  <input type="text" name="id">
+  <input type="button" id="sample1" value="サンプル1">
+</form>
+<div id="prd">
+  <!-- ここに埋め込んでみましょう -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+<script>
+  $("#sample1").on("click", function () {
+    var id = $('[name="id"]').val(); 
+    $.ajax({
+      url: 'ajaxtest.php',
+      type: "POST",
+      dataType: "json",
+      data:{shohin_id: id},
+      success: function (data) {
+        $('#prd').html(data);
+        console.log(data);
+      } //phpからの戻り値がdataに代入される
+      ,error: function(response) {
+        console.log(response);
+      }
+    });
+  });
+</script>
