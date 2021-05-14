@@ -2,8 +2,16 @@
 
 <script>
 
-  for(let i =1; i < 31 ; i++){
+var yearStr = 2021;
+var monthSter = 5;
+var jsMonth = monthSter - 1;
 
-    // console.log( i + 'は第二月曜です');
+  for(let i =1; i < 31 ; i++){
+    var date = new Date(yearStr, jsMonth, i);
+    var dn = Math.floor( (i + 6) / 7);
+    var wn = date.getDay();
+
+    if(dn == 2 && wn == 1)
+      console.log( i + 'は第二月曜です');
   }
 </script>
